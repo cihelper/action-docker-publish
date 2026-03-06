@@ -68,7 +68,7 @@ runs:
         registry: ${{ inputs.registry }}
         username: ${{ inputs.registry-username }}
         password: ${{ inputs.registry-password }}
-    - uses: docker/metadata-action@v5
+    - uses: docker/metadata-action@v6
       id: meta
       with:
         images: ${{ inputs.registry }}/${{ inputs.image-name }}
